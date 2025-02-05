@@ -461,6 +461,9 @@ body, html {
 
 
 /* footer */
+
+
+
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -488,7 +491,7 @@ body, html {
     font-size: 1em;
 }
 .footer-column a:hover {
-    color: blue;
+    color: #00ff00;
 }
 .footer-right {
     text-align: center;
@@ -498,8 +501,8 @@ body, html {
 }
 .get-it-now {
     display: inline-block;
-    background-color: blue;
-    color: white;
+    background-color: #00ff00;
+    color: black;
     padding: 15px 30px;
     border-radius: 30px;
     font-size: 1em;
@@ -521,6 +524,229 @@ body, html {
 }
 .social-icons img {
     width: 30px;
+}
+
+
+/* Small phones */
+@media (max-width: 480px) {
+    .footer-container {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .footer-column {
+        align-items: center;
+    }
+
+    .footer-column h3 {
+        font-size: 1.1em;
+    }
+
+    .footer-column a {
+        font-size: 0.9em;
+    }
+
+    .footer-right img {
+        max-width: 200px;
+    }
+
+    .get-it-now {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .footer-bottom {
+        font-size: 0.8em;
+    }
+}
+
+/* Medium phones */
+@media (min-width: 481px) and (max-width: 767px) {
+    .footer-container {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .footer-column {
+        align-items: center;
+    }
+
+    .footer-column h3 {
+        font-size: 1.2em;
+    }
+
+    .footer-column a {
+        font-size: 1em;
+    }
+
+    .footer-right img {
+        max-width: 220px;
+    }
+
+    .get-it-now {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+
+    .footer-bottom {
+        font-size: 0.9em;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 30px;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        gap: 70px;
+    }
+
+    .footer-column {
+        align-items: flex-start;
+    }
+
+    .footer-column h3 {
+        font-size: 1.3em;
+    }
+
+    .footer-column a {
+        font-size: 1em;
+    }
+
+    .footer-right img {
+        max-width: 240px;
+    }
+
+    .get-it-now {
+        width: auto;
+        text-align: center;
+    }
+
+    .social-icons {
+        gap: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 0.95em;
+    }
+}
+
+/* Small Laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .footer-container {
+        padding: 40px 60px;
+    }
+
+    .footer-links {
+        gap: 80px;
+    }
+
+    .footer-column h3 {
+        font-size: 1.4em;
+    }
+
+    .footer-column a {
+        font-size: 1em;
+    }
+
+    .footer-right img {
+        max-width: 250px;
+    }
+
+    .social-icons {
+        gap: 25px;
+    }
+
+    .footer-bottom {
+        font-size: 1em;
+    }
+}
+
+/* Large Laptops & Desktops */
+@media (min-width: 1200px) {
+    .footer-container {
+        padding: 40px 60px;
+    }
+
+    .footer-links {
+        gap: 80px;
+    }
+
+    .footer-column h3 {
+        font-size: 1.5em;
+    }
+
+    .footer-column a {
+        font-size: 1em;
+    }
+
+    .footer-right img {
+        max-width: 250px;
+    }
+
+    .social-icons {
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        font-size: 1.1em;
+    }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1921px) {
+    .footer-container {
+        padding: 40px 100px;
+    }
+
+    .footer-links {
+        gap: 120px;
+    }
+
+    .footer-column h3 {
+        font-size: 1.6em;
+    }
+
+    .footer-column a {
+        font-size: 1.1em;
+    }
+
+    .footer-right img {
+        max-width: 300px;
+    }
+
+    .social-icons {
+        gap: 40px;
+    }
+
+    .footer-bottom {
+        font-size: 1.2em;
+    }
 }
 
 
