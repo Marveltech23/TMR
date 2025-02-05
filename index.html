@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/script.js">
+    <style>
+      
+    </style>
+</head>
+<body>
+    <header class="bg-gray-800 text-white px-6 py-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="text-2xl font-bold">DrApp</div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                ☰
+            </button>
+    
+            <!-- Navigation Links -->
+            <nav id="menu" class="hidden md:flex space-x-6">
+                <ul class="md:flex space-x-6">
+                    <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Features</a></li>
+                    <li><a href="#" class="hover:text-gray-300">How It Works</a></li>
+                    <!-- <li><a href="#" class="hover:text-gray-300">Testimonials</a></li> -->
+                </ul>
+            </nav>
+    
+            <button class="hidden md:block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">
+                Download
+            </button>
+        </div>
+    
+        <!-- Mobile Navigation -->
+        <nav id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 mt-4">
+            <a href="#" class="block text-center hover:text-gray-300">Home</a>
+            <a href="#" class="block text-center hover:text-gray-300">Features</a>
+            <a href="#" class="block text-center hover:text-gray-300">How It Works</a>
+            <a href="#" class="block text-center hover:text-gray-300">Testimonials</a>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">
+                Sign Up/Download
+            </button>
+            
+        </nav>
+    </header>
+    
+    
+    
+    <section class="hero-section">
+        <div class="hero-content">
+            <span class="highlight-badge"></span>
+            <h1 class="main-heading">Healthcare Made Simple – No Waiting, No Stress</h1>
+            <p class="hero-description">Tired of long hospital lines and struggling to find the right doctor? Dr. Apps puts doctors, lab tests, prescriptions, and emergency care right in your hands. Fast, easy, and on your terms.
+
+
+
+
+
+
+
+            </p>
+            <div class="hero-buttons">
+                <!-- <button class="download-button">Download Now</button> -->
+                <div class="flex justify-center">
+                    <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold shadow hover:bg-blue-700">
+                        Get started for free
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/img/heropic.png" alt="Fitness App Preview">
+        </div>
+    </section>
+
+
+    <!-- features -->
+
+    <h2 class="title-heading">Core Features</h2>
+    <div class="features-wrapper">
+        <div class="feature-item highlight-feature">
+            <div class="icon-style">📅</div>
+            <h3 class="feature-title">Appointment Scheduling & Management</h3>
+            <p>Sync with the doctor's calendar for real-time availability.</p>
+        </div>
+        <div class="feature-item">
+            <div class="icon-style">👨‍⚕️</div>
+            <h3 class="feature-title">Electronic Health Records (EHR) & Patient Profiles</h3>
+            <p>Secure access to patient records for better diagnosis and treatment.</p>
+        </div>
+        <div class="feature-item">
+            <div class="icon-style">💊</div>
+            <h3 class="feature-title">E-Prescriptions & Medicine Reminders</h3>
+        </div>
+        <div class="feature-item">
+            <div class="icon-style">🚑</div>
+            <h3 class="feature-title">Report Emergency</h3>
+            <p>Find an ambulance within a minute.</p>
+        </div>
+        <div class="feature-item">
+            <div class="icon-style">🧪</div>
+            <h3 class="feature-title">Order LabTest</h3>
+            <p>Talk to specialist</p>
+        </div>
+        
+    </div>
+    
+    <div class="flex justify-center">
+        <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold shadow hover:bg-blue-700">
+            Get started for free →
+        </button>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- how it works  -->
+    <section class="px-6 py-16 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold text-blue-600 mb-4">Why Dr. Apps?</h1>
+            <p class="text-lg text-gray-400 mb-10">
+                Imagine having a personal doctor, a pharmacy, a lab, and a health tracker—all in one place. That’s exactly what Dr. Apps delivers.
+            </p>
+        </div>
+    
+        <!-- Content Section -->
+        <div class="max-w-6xl mx-auto space-y-16">
+            
+            <!-- First Row -->
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="/img/Booking.png" alt="Booking" class="w-3/4 md:w-2/3 mx-auto rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 text-left">
+                    <p class="text-xl font-bold text-blue-600">Book Doctor Appointments in Seconds</p>
+                    <p class="text-gray-300 mt-2">
+                        Finding the right doctor has never been easier! With Dr. Apps, you can:
+                        <ul class="list-disc list-inside mt-2 space-y-2">
+                            <li>Browse verified doctors by specialty.</li>
+                            <li>Check ratings and reviews before booking.</li>
+                            <li>Schedule video or in-person consultations at your convenience.</li>
+                        </ul>
+                    </p>
+                    <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">Get The App Now</button>
+                </div>
+            </div>
+    
+            <!-- Second Row (Reversed for Alternating Layout) -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="/img/doctor.png" alt="Specialist" class="w-3/4 md:w-2/3 mx-auto rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 text-left">
+                    <p class="text-xl font-bold text-blue-600">🩺 Meet the Right Specialist for Your Health Needs</p>
+                    <p class="text-gray-300 mt-2">
+                        Not sure which doctor to see? Dr. Apps connects you with the best specialists based on your symptoms and needs—so you always get the right care.
+                    </p>
+                    <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">Get The App Now</button>
+                </div>
+            </div>
+    
+            <!-- Third Row -->
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="/img/healthdata.png" alt="Health Data" class="w-3/4 md:w-2/3 mx-auto rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 text-left">
+                    <p class="text-xl font-bold text-blue-600">📊 Track Your Health Data in One Place</p>
+                    <p class="text-gray-300 mt-2">
+                        View your test results, prescriptions, and health history anytime.
+                        Set reminders for medications and upcoming appointments.
+                        Get insights to help you stay on top of your health.
+                    </p>
+                    <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">Get The App Now</button>
+                </div>
+            </div>
+
+<!-- fouth  -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="/img/chat.png" alt="Specialist" class="w-3/4 md:w-2/3 mx-auto rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 text-left">
+                    <p class="text-xl font-bold text-blue-600">💬 Chat with a Doctor Anytime
+                    </p>
+                    <p class="text-gray-300 mt-2">
+                        Have a health concern? Message or video call a doctor 24/7—no waiting, no stress.
+                    </p>
+                    <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">Get The App Now</button>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+
+
+
+    <!--  -->
+
+<!-- 
+    <div class="custom-container">
+        <div class="image-container">
+            <img src="/img/Health data.png" alt="First Section Image">
+        </div>
+        <div class="text-container">
+            <h2>Discover the Benefits</h2>
+            <p>Explore the unique features of FitLife. Learn about personalized workouts, nutrition guidance, and progress tracking tailored to your needs.</p>
+        </div>
+    </div>
+
+    <div class="custom-container" style="flex-direction: row-reverse;">
+        <div class="image-container">
+            <img src="/img/healthdoctor.png" alt="Second Section Image">
+        </div>
+        <div class="text-container">
+            <h2>Interactive Walkthrough</h2>
+            <p>Navigate the app with ease. Our interactive tour guides you through key features and functionalities.</p>
+        </div>
+    </div> -->
+
+    <div class="bg-gray-100 flex items-center justify-center min-h-screen">
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-4xl w-full">
+            <h1 class="text-2xl font-bold mb-6 text-center text-blue-500">What makes Dr App <span class="text-blue-600">the right choice.</span></h1>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-2 px-4 bg-gray-200 text-left text text-gray-600">Benefits</th>
+                            <th class="py-2 px-4 bg-gray-200 text-center text-gray-600">RESULTS</th>
+                            <th class="py-2 px-4 bg-gray-200 text-center text-gray-600">Other Apps</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2 px-4 border-b text-blue-500">Convenience at Your Fingertips</td>
+                            <td class="py-2 px-4 border-b text-center"><span class="text-blue-600">✔</span></td>
+                            <td class="py-2 px-4 border-b text-center"><span class="text-blue-600">✔</span></td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b text-blue-500">Faster Access to Healthcare</td>
+                            <td class="py-2 px-4 border-b text-center"><span class="text-blue-600">✔</span></td>
+                            <td class="py-2 px-4 border-b text-center"><span class="text-blue-600">✔</span></td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b text-blue-500"> Cost-Effective Healthcare
+                            </td>
+                            <td class="py-2 px-4 border-b text-center text"><span class="text-blue-600">✔</span></td>
+                            <td class="py-2 px-4 border-b text-center"><span class="text-gray-400">✖</span></td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b text-blue-500">24/7 Healthcare Access</td>
+                            <td class="py-2 px-4 border-b text-center"><span class="text-blue-600">✔</span></td>
+                            <td class="py-2 px-4 border-b text-center"><span class="text-gray-400">✖</span></td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b text-blue-500">Secure & Organized Health Records</td>
+                            <td class="py-2 px-4 border-b text-center"><span class="text-blue-600">✔</span></td>
+                            <td class="py-2 px-4 border-b text-center"><span class="text-gray-400">✖</span></td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b text-blue-500">Reliable & Verified Healthcare Professionals
+                            </td>
+                            <td class="py-2 px-4 border-b text-center"><span class="text-blue-600">✔</span></td>
+                            <td class="py-2 px-4 border-b text-center"><span class="text-gray-400">✖</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-6 text-center">
+                <button class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Get started for free →</button>
+                <p class="mt-2 text-gray-600">Over 1,000+ 5-Star Reviews Online</p>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="bg-gradient-to-r from-blue-500 to-blue-700 text-white">
+        <div class="container mx-auto py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="flex justify-center mb-4">
+                        <div class="bg-white p-4 rounded-full">
+                            <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3v18h18M3 3l18 18M3 3l18 18"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="text-xl font-bold mb-2">1️⃣ No More Waiting Rooms</h2>
+                    <p>Get the care you need without wasting time in hospitals or clinics.
+
+                    </p>
+                </div>
+                <div>
+                    <div class="flex justify-center mb-4">
+                        <div class="bg-white p-4 rounded-full">
+                            <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2l9 4.5-9 4.5-9-4.5L12 2zm0 13.5l9 4.5-9 4.5-9-4.5 9-4.5z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="text-xl font-bold mb-2">2️⃣ 24/7 Healthcare Access
+                    </h2>
+                    <p>Doctors, lab tests, and medicine—available whenever you need them.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex justify-center mb-4">
+                        <div class="bg-white p-4 rounded-full">
+                            <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2l9 4.5-9 4.5-9-4.5L12 2zm0 13.5l9 4.5-9 4.5-9-4.5 9-4.5z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="text-xl font-bold mb-2">3️⃣ Secure & Trusted by Thousands
+
+                    </h2>
+                    <p>All doctors, pharmacies, and labs are verified and licensed. Your health is in safe hands.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="bg-black text-white">
+        <div class="w-full overflow-hidden relative">
+            <div class="scroll-container flex space-x-4 overflow-x-scroll snap-x snap-mandatory">
+                <div class="min-w-[280px] md:min-w-[320px] lg:min-w-[350px] h-[600px] bg-gradient-to-b from-pink-500 to-purple-600 rounded-2xl p-4 snap-center flex flex-col items-center justify-between">
+                    <img src="/img/Health data.png" alt="Search Feature" class="w-full h-2/3 rounded-lg object-cover">
+                    <div class="text-center">
+                        <h2 class="text-lg font-bold">Health  Data</h2>
+                        <p class="text-sm">Find all the songs you're looking for, from any genre or release date.</p>
+                    </div>
+                </div>
+                <div class="min-w-[280px] md:min-w-[320px] lg:min-w-[350px] h-[600px] bg-gradient-to-b from-red-500 to-yellow-600 rounded-2xl p-4 snap-center flex flex-col items-center justify-between">
+                    <img src="image2.jpg" alt="Recommendations" class="w-full h-2/3 rounded-lg object-cover">
+                    <div class="text-center">
+                        <h2 class="text-lg font-bold">Music recommendations</h2>
+                        <p class="text-sm">Discover new artists and tracks recommended just for you.</p>
+                    </div>
+                </div>
+                <div class="min-w-[280px] md:min-w-[320px] lg:min-w-[350px] h-[600px] bg-gradient-to-b from-red-500 to-yellow-600 rounded-2xl p-4 snap-center flex flex-col items-center justify-between">
+                    <img src="image2.jpg" alt="Recommendations" class="w-full h-2/3 rounded-lg object-cover">
+                    <div class="text-center">
+                        <h2 class="text-lg font-bold">Music recommendations</h2>
+                        <p class="text-sm">Discover new artists and tracks recommended just for you.</p>
+                    </div>
+                </div>
+
+                <div class="min-w-[280px] md:min-w-[320px] lg:min-w-[350px] h-[600px] bg-gradient-to-b from-red-500 to-yellow-600 rounded-2xl p-4 snap-center flex flex-col items-center justify-between">
+                    <img src="image2.jpg" alt="Recommendations" class="w-full h-2/3 rounded-lg object-cover">
+                    <div class="text-center">
+                        <h2 class="text-lg font-bold">Music recommendations</h2>
+                        <p class="text-sm">Discover new artists and tracks recommended just for you.</p>
+                    </div>
+                </div>
+                <div class="min-w-[280px] md:min-w-[320px] lg:min-w-[350px] h-[600px] bg-gradient-to-b from-green-500 to-teal-600 rounded-2xl p-4 snap-center flex flex-col items-center justify-between">
+                    <img src="image3.jpg" alt="Playlists" class="w-full h-2/3 rounded-lg object-cover">
+                    <div class="text-center">
+                        <h2 class="text-lg font-bold">Awesome playlists</h2>
+                        <p class="text-sm">Discover curated playlists or create your own.</p>
+                    </div>
+                </div>
+            </div>
+        </div>    -->
+
+        <!-- <div class="scroll-container">
+            <div class="scroll-card">
+                <p>Card 1 Description</p>
+            </div>
+            <div class="scroll-card">
+                <img src="/img/apps.png" alt="Card 2">
+                <p>Card 2 Description</p>
+            </div>
+            <div class="scroll-card">
+                <img src="image3.jpg" alt="Card 3">
+                <p>Card 3 Description</p>
+            </div>
+            <div class="scroll-card">
+                <img src="image4.jpg" alt="Card 4">
+                <p>Card 4 Description</p>
+            </div>
+            <div class="scroll-card">
+                <img src="image5.jpg" alt="Card 5">
+                <p>Card 5 Description</p>
+            </div>
+        </div> -->
+        
+        
+
+
+        <h1 class="esound-header">Find Dr App in stores</h1>
+        <p class="esound-subtext"> Dr App  is available on all stores and optimized for all your devices. <br> Download the app today!</p>
+        <div class="esound-store-links">
+            <a href="#" class="store-button"><img src="/img/apple.png" alt="Download on the App Store"></a>
+            <a href="#" class="store-button"><img src="/img/google.png" alt="Get it on Google Play"></a>
+            <a href="#" class="store-button"><img src="/img/AppGallery.png" alt="Explore it on AppGallery"></a>
+            <a href="#" class="store-button"><img src="/img/Microsoft.png" alt="Get it from Microsoft"></a>
+            <a href="#" class="store-button"><img src="/img/amazon.png" alt="Available at Amazon Appstore"></a>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>To start</h3>
+                    <a href="#">Download the app</a>
+                    <a href="#">Customer support</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Explore the app</h3>
+                    <a href="#">Appointment Scheduling & Management</a>
+                    <a href="#">Electronic Health Records (EHR) & Patient Profiles</a>
+                    <a href="#">Report Emergency</a>
+                    <a href="#">Order LabTest</a>
+                    <a href="#">E-Prescriptions & Medicine Reminders</a>
+                    <a href="#" style="color:#00ff00;">Library</a>
+                </div>
+                <div class="footer-column">
+                    <!-- <h3>Your account</h3>
+                    <a href="#">Register</a>
+                    <a href="#">Manage account</a>
+                    <a href="#">Premium</a>
+                    <a href="#">Redeem premium</a> -->
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <a href="#">About</a>
+                    <a href="#">More apps</a>
+                    <a href="#">Careers</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <img src="devices.png" alt="Devices">
+                <br>
+                <a href="#" class="get-it-now">GET IT NOW</a>
+            </div>
+        </div>
+        <!-- <div class="footer-bottom">
+            Dr. Apps is a digital healthcare platform where you can book appointments, manage your health, and discover trusted doctors and medical services.
+            <div class="social-icons">
+                <img src="facebook.png" alt="Facebook">
+                <img src="instagram.png" alt="Instagram">
+                <img src="twitter.png" alt="Twitter">
+                <img src="discord.png" alt="Discord">
+                <img src="reddit.png" alt="Reddit">
+            </div>
+        </div> -->
+    </section>
+
+
+
+
+     <script>
+        function showTab(tab) {
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.add('hidden'));
+            document.querySelector(`#${tab}`).classList.remove('hidden');
+            document.querySelectorAll('.tab-link').forEach(link => link.classList.remove('text-blue-600', 'border-blue-600'));
+            event.target.classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
+        }
+
+        const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+
+        
+
+//wheel
+        // document.querySelector('.scroll-container').addEventListener('wheel', (evt) => {
+        //             evt.preventDefault();
+        //             document.querySelector('.scroll-container').scrollLeft += evt.deltaY;
+        //         });
+    </script>
+    
+</body>
+</html>
+
